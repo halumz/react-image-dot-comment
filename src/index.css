@@ -76,5 +76,5 @@ body {
   justify-content: center;
   display: flex;
   flex-direction: column;
-  bottom: 0;
+  bottom: 5px;
 }
