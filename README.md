@@ -2,7 +2,6 @@
 
 This project template was built with [Create React App](https://github.com/facebookincubator/create-react-app), which provides dot comments for image.
 
-Here is a [Demo](https://halumz.github.io/react-image-dot-comment) 
 ### `npm start`
 
 Runs the app in the development mode.<br>

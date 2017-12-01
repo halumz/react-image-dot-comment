@@ -18,6 +18,7 @@ export default class extends Component {
     return (
       <div className="fileUpload">
         <span className="fileText">+</span>
+        <span className="spanUpload">upload</span>
         <input
           type="file"
           className="inputUpload"
