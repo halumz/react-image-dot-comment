@@ -1,4 +1,4 @@
-Here is a [Demo](https://halumz.github.io/react-image-dot-comment) 
+Here is a <a href="https://halumz.github.io/react-image-dot-comment" target="_blank">Demo</a>
 
 # React Image Dot Comment
 This project template was built with [Create React App](https://github.com/facebookincubator/create-react-app), which provides dot comments for image.
