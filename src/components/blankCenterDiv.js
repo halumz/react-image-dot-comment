@@ -9,6 +9,6 @@ const style = {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
-  fontSize: '200%'
+  fontSize: '2em'
 };
 export default ({ text }) => <div style={style}>{text}</div>;
