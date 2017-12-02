@@ -121,7 +121,7 @@ const style = {
       padding: '3px',
       right: '0px',
       opacity: 1,
-      transition: 'all 1s ease'
+      transition: 'all .8s ease'
     },
     mainHidden: {
       width: '20vw',
@@ -134,7 +134,7 @@ const style = {
       padding: '3px',
       right: '0px',
       opacity: 0,
-      transition: 'all 1s ease'
+      transition: 'all .8s ease'
     },
     header: { fontSize: '1.5em', color: colors.primary },
     commentComponent: {
