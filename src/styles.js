@@ -112,7 +112,7 @@ const style = {
   AllComments: {
     main: {
       width: '20vw',
-      minHeight: '70vh',
+      minHeight: '100vh',
       position: 'absolute',
       background: colors.bgComment,
       textAlign: 'center',
@@ -120,19 +120,21 @@ const style = {
       zIndex: 1,
       padding: '3px',
       right: '0px',
-      transition: 'all .5s ease'
+      opacity: 1,
+      transition: 'all 1s ease'
     },
     mainHidden: {
       width: '20vw',
-      minHeight: '70vh',
+      minHeight: '100vh',
       position: 'absolute',
       background: colors.bgComment,
       textAlign: 'center',
       borderRadius: '5px',
       zIndex: 1,
       padding: '3px',
-      right: '-30vw',
-      transition: 'all .5s ease'
+      right: '0px',
+      opacity: 0,
+      transition: 'all 1s ease'
     },
     header: { fontSize: '1.5em', color: colors.primary },
     commentComponent: {
