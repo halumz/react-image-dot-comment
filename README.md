@@ -1,7 +1,7 @@
 Here is a <a href="https://halumz.github.io/react-image-dot-comment" target="_blank">Demo</a>
 
 # React Image Dot Comment
-This project template was built with [Create React App](https://github.com/facebookincubator/create-react-app), which provides dot comments for image.
+This project template was built with <a href="https://github.com/facebookincubator/create-react-app" target="_blank">Create React App</a>, which provides dot comments for image.
 
 ### `npm start`
 
