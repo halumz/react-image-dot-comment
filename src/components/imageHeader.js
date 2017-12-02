@@ -26,12 +26,15 @@ export default class extends Component {
           }}
           autoFocus
         />
-        <button
+        {/* <button
           className="simpleButton"
-          onClick={() => this.setState({ editable: false })}
+          onClick={event => {
+            event.stopPropagation();
+            this.setState({ editable: false });
+          }}
         >
           Cancel
-        </button>
+        </button> */}
       </div>
     ) : (
       <div style={style.main}>
@@ -39,7 +42,10 @@ export default class extends Component {
         <button
           className="simpleButton"
           style={style.editButton}
-          onClick={() => this.setState({ editable: true })}
+          onClick={event => {
+            event.stopPropagation();
+            this.setState({ editable: true });
+          }}
         >
           Edit
         </button>

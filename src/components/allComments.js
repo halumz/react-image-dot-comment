@@ -27,7 +27,8 @@ class AllComments extends Component {
             style.commentComponent
           )
         }
-        onClick={() => {
+        onClick={event => {
+          event.stopPropagation();
           setSelectedPoint(comment.pointId);
         }}
       >

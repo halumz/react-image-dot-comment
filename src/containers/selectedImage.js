@@ -53,7 +53,13 @@ class SelectedImage extends Component {
       (window.innerWidth - dimensions.width) / 2
     )}px`;
     return (
-      <div style={style.main}>
+      <div
+        style={style.main}
+        onClick={event => {
+          event.stopPropagation();
+          setSelectedPoint(null);
+        }}
+      >
         <div style={style.imageBody}>
           <ImageHeader
             image={selectedImage}
