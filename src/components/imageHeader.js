@@ -10,10 +10,12 @@ export default class extends Component {
     name: this.props.image.name
   };
   componentWillReceiveProps(nextProps) {
-    this.setState({ editable: false, name: nextProps.image.name });
+    if (this.props.image.name !== nextProps.image.name) {
+      this.setState({ editable: false, name: nextProps.image.name });
+    }
   }
   render() {
-    const { image, editImage, deleteImage } = this.props;
+    const { image, editImage, deleteImage, setSelectedPoint } = this.props;
     const { name } = this.state;
     return this.state.editable ? (
       <div style={style.main}>
@@ -28,9 +30,12 @@ export default class extends Component {
         />
         {/* <button
           className="simpleButton"
+          style={style.cancelButton}
           onClick={event => {
+            console.log(22);
             event.stopPropagation();
             this.setState({ editable: false });
+            setSelectedPoint(null);
           }}
         >
           Cancel
@@ -45,6 +50,7 @@ export default class extends Component {
           onClick={event => {
             event.stopPropagation();
             this.setState({ editable: true });
+            setSelectedPoint(null);
           }}
         >
           Edit

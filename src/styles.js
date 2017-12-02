@@ -70,7 +70,8 @@ const style = {
     },
     name: { color: 'white', marginTop: '5px', marginRight: '5px' },
     deleteButton: { background: 'red', color: 'white' },
-    editButton: {}
+    editButton: {},
+    cancelButton: {}
   },
   ImagePreview: {
     main: {},

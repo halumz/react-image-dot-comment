@@ -65,6 +65,7 @@ class SelectedImage extends Component {
             image={selectedImage}
             editImage={editImage}
             deleteImage={deleteImage}
+            setSelectedPoint={setSelectedPoint}
           />
           <div style={style.settingsWrapper}>
             <button
