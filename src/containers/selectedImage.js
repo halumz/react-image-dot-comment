@@ -52,6 +52,7 @@ class SelectedImage extends Component {
     const paddingLeft = `${Math.round(
       (window.innerWidth - dimensions.width) / 2
     )}px`;
+    console.log(paddingLeft);
     return (
       <div
         style={style.main}
@@ -88,8 +89,8 @@ class SelectedImage extends Component {
           <div
             style={{
               height: dimensions.height,
-              paddingLeft,
-              ...style.imageWrapper
+              ...style.imageWrapper,
+              paddingLeft
             }}
           >
             <ImagePreview {...imagePreViewProps} />

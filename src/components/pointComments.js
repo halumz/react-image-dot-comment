@@ -61,7 +61,7 @@ class PointComments extends Component {
             X
           </span>
         </div>
-        <span>{comment.comment}</span>
+        <span style={style.commentSpan}>{comment.comment}</span>
       </div>
     );
     return (
@@ -76,9 +76,13 @@ class PointComments extends Component {
             {newPoint ? 'Add comment' : 'Comments'}
           </span>
         </div>
-        {thisPointComments.map(commentComponent)}
+        <div style={style.commentsWrapper}>
+          {thisPointComments.map(commentComponent)}
+        </div>
         <InputSearch
           autoFocus
+          clearOnSearch
+          placeholder="comment here"
           style={style.input}
           onSearch={comment => {
             if (comment) {

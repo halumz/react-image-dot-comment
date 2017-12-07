@@ -36,12 +36,12 @@ class AllComments extends Component {
           <span style={style.commentUser}>{comment.user}</span>
           <span style={style.commentTime}>{timeDifference(comment.time)}</span>
         </div>
-        <span>{comment.comment}</span>
+        <span style={style.commentSpan}>{comment.comment}</span>
       </div>
     );
     const bodyStyle = showAllComments ? style.main : style.mainHidden;
     return (
-      <div style={{ ...bodyStyle, minHeight: dimensions.height }}>
+      <div style={{ ...bodyStyle, height: dimensions.height }}>
         <span style={style.header}>All Comments</span>
         {comments.length === 0 ? (
           <BlankCenterDiv text="No Comments" />

@@ -49,7 +49,6 @@ const style = {
     commentDiv: { position: 'absolute' },
     imageWrapper: {
       width: '100vw',
-      textAlign: 'center',
       background: colors.bgDark,
       padding: '5px'
     },
@@ -97,6 +96,7 @@ const style = {
       color: 'white',
       margin: '3px'
     },
+    commentsWrapper: { maxHeight: '30vh', overflowY: 'auto' },
     commentBody: { display: 'flex', marginTop: '2px' },
     commentUser: {
       fontWeight: 'bold',
@@ -108,13 +108,16 @@ const style = {
       color: 'red',
       textAlign: 'right',
       flex: '1'
-    }
+    },
+    commentSpan: { overflowX: 'scroll', wordBreak: 'break-all' }
   },
   AllComments: {
     main: {
       width: '20vw',
-      minHeight: '100vh',
+      top: '40vh',
       position: 'absolute',
+      overflowY: 'auto',
+      overflowX: 'hidden',
       background: colors.bgComment,
       textAlign: 'center',
       borderRadius: '5px',
@@ -126,8 +129,10 @@ const style = {
     },
     mainHidden: {
       width: '20vw',
-      minHeight: '100vh',
+      top: '40vh',
       position: 'absolute',
+      overflowY: 'auto',
+      overflowX: 'hidden',
       background: colors.bgComment,
       textAlign: 'center',
       borderRadius: '5px',
@@ -158,7 +163,8 @@ const style = {
       marginRight: '5px',
       fontStyle: 'italic'
     },
-    commentTime: { color: 'rgba(255,255,255,.60)' }
+    commentTime: { color: 'rgba(255,255,255,.60)' },
+    commentSpan: { overflowX: 'scroll', wordBreak: 'break-all' }
   }
 };
 export default style;
