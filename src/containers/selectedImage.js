@@ -52,7 +52,6 @@ class SelectedImage extends Component {
     const paddingLeft = `${Math.round(
       (window.innerWidth - dimensions.width) / 2
     )}px`;
-    console.log(paddingLeft);
     return (
       <div
         style={style.main}
