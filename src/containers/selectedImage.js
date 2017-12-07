@@ -120,7 +120,7 @@ function mapStateToProps(state) {
   }
   if (!selectedImage) {
     return {
-      notSelected: 'Please Select a Picture or upload a new Image'
+      notSelected: 'Please Select a Picture or Upload a Image'
     };
   }
   const { id } = selectedImage;
